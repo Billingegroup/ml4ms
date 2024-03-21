@@ -1,6 +1,7 @@
 {
     "materials_data": {
         "title": "materials_data",
+        "type": "object",
         "properties": {
             "_id": {
                 "type": "string",
@@ -10,7 +11,9 @@
                 "type": "string",
                 "description": "the schema type of collection for validation: 'materials_data'"
             }
-        }
+        },
+        "required": ["_id", "schema"]
+
     },
     "trials": {
         "title": "trials",
@@ -18,7 +21,7 @@
         "properties": {
             "_id": {"type": "string", "description": "a universally unique identifier"},
             "schema": {"type": "string", "description": "the schema type of collection for validation: 'trials'"},
-            "datetime": {"type": "string", "description": "the datetime when the trial was dumped in iso format"},
+            "time_created": {"type": "string", "description": "the datetime when the trial was dumped in iso format"},
             "trial_descr": {"type": "string", "description": "a memorable description of the trial"},
             "data_sample_filters": {
                 "type": "array",
@@ -28,7 +31,7 @@
             "feature_filters": {"type": "array", "items": {"type":"string"},"description": "the list of features to use from each material"},
             "models_list": {"type": "array", "items":{"type": "string"}, "description": "the list of models to use"},
             "metadata": {"type": "object", "description": "any metadata needed"}
-    },
-        "required": ["metadata"]
+        },
+        "required": ["_id", "schema", "time_created", "user_name", "user_email"]
     }
 }

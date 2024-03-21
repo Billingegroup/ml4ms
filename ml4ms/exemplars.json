@@ -16,8 +16,9 @@
     "test_trial_coll": [{
         "_id": "first_doc",
         "schema": "trials",
-        "name": "me",
-        "datetime": "2021-05-01",
+        "user_name": "me",
+        "user_email": "sb2222@columbia.edu",
+        "time_created": "2021-05-01",
         "trial_descr": "str",
         "feature_filters": ["spectrum"],
         "data_sample_filters": [{"material_id": "Ti"}],
