@@ -53,7 +53,7 @@ def make_db():
                     "path": "db",
                     "local": True,
                     "backend": "filesystem",
-                }
+                },
                 # "tokens": [{"_id": "gitlab_private_token", "token": "<private_token>"}],
             },
             f,

@@ -1,4 +1,5 @@
 """Helps manage mongodb setup and connections."""
+
 import os
 from contextlib import contextmanager
 
