@@ -1,4 +1,5 @@
 """Contains a client database backed by the file system."""
+
 import datetime
 import json
 import logging
